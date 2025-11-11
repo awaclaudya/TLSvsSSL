@@ -1,0 +1,41 @@
+package tls_server;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLServerSocket;
+import javax.net.ssl.SSLServerSocketFactory;
+import java.io.*;
+public class JavaTLSServerExample {
+private static final String[] protocols = {"TLSv1.3"};
+private static final String[] cipher_suites = {"TLS_AES_128_GCM_SHA256"};
+public static void main(String[] args) throws Exception {
+ SSLServerSocket serverSocket = null;
+ try {
+ // 1. O bt m f brica padr o de sockets de servidor SSL
+ SSLServerSocketFactory factory =
+ (SSLServerSocketFactory) SSLServerSocketFactory.getDefault();
+ // 2. Cria socket de servidor na porta 8980
+ serverSocket = (SSLServerSocket) factory.createServerSocket(8980);
+ // 3. F or a uso exclusivo do TLS 1.3
+ serverSocket.setEnabledProtocols(protocols);
+ // 4. Restringe cipher suite mais segura do TLS 1.3
+ serverSocket.setEnabledCipherSuites(cipher_suites);
+ // 5. A c e i t a o de conex o
+ SSLSocket sslSocket = (SSLSocket) serverSocket.accept();
+ // 6. Leitura do pedido
+ InputStream inputStream = sslSocket.getInputStream();
+ InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+ BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+ String request = null;
+ while((request = bufferedReader.readLine()) != null) {
+ System.out.println(request);
+ System.out.flush();
+ }
+ } catch (Exception e) {
+ e.printStackTrace();
+ } finally {
+ // 7. Fecho do socket de servidor
+ if (serverSocket != null) {
+ serverSocket.close();
+ }
+ }
+ }
+ }

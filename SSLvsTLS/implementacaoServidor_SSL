@@ -1,0 +1,45 @@
+package ssl_server;
+import javax.net.ssl.;
+import java.io.;
+import java.security.*;
+public class SSLServer {
+private static final int PORT = 1234;
+public static void main(String[] args) {
+try {
+// 1. Carregamento do keystore com chave privada e certificado do servidor
+ char[] password = "password".toCharArray();
+ KeyStore keyStore = KeyStore.getInstance("JKS");
+ try (FileInputStream fis = new FileInputStream("server.keystore")) {
+ keyStore.load(fis, password);
+ }
+ // 2. C r i a o da f brica de gestores de chaves
+ KeyManagerFactory kmf = KeyManagerFactory.getInstance("SunX509");
+ kmf.init(keyStore, password);
+ // 3. C r i a o do contexto SSL/TLS
+ SSLContext sslContext = SSLContext.getInstance("TLS");
+ sslContext.init(kmf.getKeyManagers(), null, null);
+ // 4. F brica de sockets de servidor SSL
+ SSLServerSocketFactory ssf = sslContext.getServerSocketFactory();
+ // 5. C r i a o do socket de servidor SSL
+ try (SSLServerSocket serverSocket = (SSLServerSocket) ssf.createServerSocket(PORT)) {
+ System.out.println("Server started. Waiting for client...");
+ // 6. A c e i t a o de conex es de clientes
+ try (SSLSocket clientSocket = (SSLSocket) serverSocket.accept()) {
+ System.out.println("Client connected.");
+ // 7. C om un ic a o com o cliente
+ try (BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.
+tInputStream()));
+ PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)) {
+ String message;
+ while ((message = in.readLine()) != null) {
+ System.out.println("Received from client: " + message);
+ out.println("Server received: " + message);
+ }
+ }
+ }
+ }
+ } catch (Exception e) {
+ e.printStackTrace();
+ }
+ }
+ }
