@@ -1,0 +1,75 @@
+Server enabled protocols: [SSLv3]
+Server enabled cipher suites: [SSL_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_RC4_128_SHA, SSL_RSA_WITH_RC4_128_MD5]
+Server started with keystore. Waiting for client...
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 1048576 bytes
+Received 1048576 bytes in 82ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 1048576 bytes
+Received 1048576 bytes in 105ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 1048576 bytes
+Received 1048576 bytes in 106ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 5242880 bytes
+Received 5242880 bytes in 294ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 5242880 bytes
+Received 5242880 bytes in 266ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 5242880 bytes
+Received 5242880 bytes in 250ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 10485760 bytes
+Received 10485760 bytes in 523ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 10485760 bytes
+Received 10485760 bytes in 475ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 10485760 bytes
+Received 10485760 bytes in 498ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 1073741824 bytes
+Received 1073741824 bytes in 49262ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 1073741824 bytes
+Received 1073741824 bytes in 48407ms
+Client requested to quit.
+Client connected.
+Negotiated protocol: SSLv3
+Negotiated cipher suite: SSL_RSA_WITH_3DES_EDE_CBC_SHA
+Client sending file of size: 1073741824 bytes
+Received 1073741824 bytes in 49729ms
+Client requested to quit.

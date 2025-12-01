@@ -1,0 +1,81 @@
+Server started on port 3001
+Enabled protocols: [TLSv1.3]
+Waiting for client...
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 1048576000 bytes
+Received 1048576000 bytes in 983ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 1048576 bytes
+Received 1048576 bytes in 67ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 1048576 bytes
+Received 1048576 bytes in 67ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 1048576 bytes
+Received 1048576 bytes in 105ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 5242880 bytes
+Received 5242880 bytes in 162ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 5242880 bytes
+Received 5242880 bytes in 165ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 5242880 bytes
+Received 5242880 bytes in 166ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 10485760 bytes
+Received 10485760 bytes in 200ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 10485760 bytes
+Received 10485760 bytes in 202ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 10485760 bytes
+Received 10485760 bytes in 202ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 1073741824 bytes
+Received 1073741824 bytes in 968ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 1073741824 bytes
+Received 1073741824 bytes in 956ms
+Client requested to quit.
+Client connected
+Negotiated protocol: TLSv1.3
+Cipher suite: TLS_AES_256_GCM_SHA384
+Client sending file of size: 1073741824 bytes
+Received 1073741824 bytes in 938ms
+Client requested to quit.
